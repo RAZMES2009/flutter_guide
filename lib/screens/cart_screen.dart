@@ -91,7 +91,7 @@ class _OrderButtonState extends State<OrderButton> {
                 setState(() {
                   _isLoading = true;
                 });
-                await Provider.of<Orders>(
+                Provider.of<Orders>(
                   context,
                   listen: false,
                 ).addOrder(
